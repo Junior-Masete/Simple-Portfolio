@@ -1,0 +1,434 @@
+@font-face {
+	font-family: junior;
+	src: url("fonts/Raleway-VariableFont_wght.ttf");
+	}
+
+@font-face {
+	font-family: luckiest;
+	src: url("../../../fonts/LuckiestGuy-Regular.ttf");
+	}
+	
+	
+@font-face {
+	font-family: heading;
+	src: url("fonts/Lobster-Regular.ttf");
+	}
+
+body {
+	background-color: #ffedc9;
+}
+
+
+.head {
+	font-family: luckiest;
+}
+	
+#container {
+	background-color: #fff;
+	max-width: 800px;
+	margin: auto;
+	height: 100vh;
+	}
+
+#bback {
+	position: fixed;
+  	top: 30px;
+ 	left: 400px;
+}
+
+#bback img {
+	width: 80px;
+	animation: grow 1s ease-in infinite;
+}
+	
+
+.main {
+	text-align:center;
+	}
+
+#header {
+	display: flex;
+	margin-bottom: 30px;
+	}
+	
+h1 {
+	font-weight: 850;
+	font-family: heading;
+	font-size: 60px;
+	}
+	
+h2 {
+	font-family: heading;
+	}
+	
+p,li,label {
+	font-family: junior;
+	}
+
+	
+button {
+	text-decoration: none;
+	padding:40px;
+	border-radius: 50%;
+	/*font-size: 100%;*/
+	color: white;
+	}
+	
+
+	
+#buttons {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 110px;
+	}
+	
+p#intro {
+	max-width: 400px;
+	padding-top: 30px;
+	margin: auto;
+	}
+	
+#entry img {
+	margin: auto;
+	}
+	
+#entry {
+	display: flex;
+	flex-wrap: wrap;
+	width: 85%;
+	margin: auto;
+	}
+	
+.cakes {
+	width: 120px;
+	height: 120px;
+	background-color: grey;
+	margin-bottom: 20px;
+	}
+	
+#one {
+	border: none;
+	background-color: #9c6615;
+	}
+	
+	
+#two {
+	background-color: #5959ff;
+	border: none;
+	}
+	
+.twoo {
+	}
+	
+#three {
+	background-color: #ffc857;
+	border: none;
+	}
+	
+.threee {
+	}
+	
+#four {
+	background-color: #6f5060;
+	border: none;
+	}
+	
+.fourr {
+	}
+	
+#five {
+	background-color: #c94277;
+	border: none;
+	}
+	
+.fivee {
+	
+	}
+	
+#six {
+	background-color: #829399;
+	border: none;
+	}
+	
+.sixx {
+
+	}
+	
+#seven, #six , #five, #four, #three, #two,#one {
+	/*background-color: #b10f2e;*/
+	background-color: #c94277;
+	border:none;
+	transition: background 1s;
+	}
+	/*, #six , #five, #four, #three, #two,#one*/
+	
+	
+#seven:hover, #six:hover , #five:hover, #four:hover, #three:hover, #two:hover,#one:hover {
+	background-color: #b10f2e;
+	border:none;
+	}
+	
+.sevenn {
+
+	}
+	
+#choose_cake {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+	
+.main input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 10px;
+	border: 2px solid black;
+	}
+	
+input[type=number] {
+  -moz-appearance: textfield;
+}
+	
+#done {
+	/*background-color: #9c6615;*/
+	color: white;
+	font-family: junior;
+	background-color: #c94277;
+	margin: 20px;
+	padding: 10px;
+	border: none;
+	transition: background 1s, padding 1s;
+	}
+	
+#done:hover {
+	padding: 12px;
+	background-color: #b10f2e;
+	}
+	
+.follows {
+	max-width: 400px;
+	background-color: grey;
+	}
+	
+#btn_next {
+	outline: 2px solid #6f5060;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	transition: background 0.5s;
+	}
+	
+	
+#btn_next:active {
+	background-color: #6f5060;
+	
+	}
+	
+	
+#example {
+	max-width: 400px;
+	background-color: #9c6615;
+	}
+	
+#txt {
+	height: 135px;
+	cursor: pointer;
+	}
+	
+img#add{
+	transition: max-width 1s, transform 1s;
+	}
+	
+img#add:hover {
+	transform: rotate(20deg);
+	}
+
+	
+img#add, img#add_two {
+	max-width: 150px;
+	cursor: pointer;
+	}
+
+img#add:hover, img#add_two:hover {
+	max-width: 160px;
+	}
+	
+#choose_cake {
+	width: 200px;
+	margin: auto;
+	}
+	
+#choose_cake img:active {
+	width: 220px;
+	}
+	
+.main1 {
+	width: 40%;
+	margin: auto;
+	}
+	
+#checkk {
+	}
+
+
+.pop-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity:0;
+	pointer-events: none;
+	}
+	
+.pop-container.visib {
+	opacity: 1;
+	pointer-events: auto;
+	}
+	
+.pop-up {
+	background-color: #fff;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 250px;
+	border-radius: 5px;
+	box-shadow:  0px 1px 5px #aeafb1, 0px -1px 5px #aeafb1;
+	}
+	
+	
+#close {
+	color: white;
+	font-family: junior;
+	background-color: #c94277;
+	padding: 10px;
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 5px;
+	}
+
+	
+/*-------------------------------------------------------------------------------------------------*/	
+@media only screen and (min-width: 450px){
+	.onee, .twoo, .threee, .fourr, .fivee, .sixx, .sevenn {
+	padding:50px;
+	}
+	}
+	
+@media only screen and (max-width: 420px){
+	.button button {
+		max-width: 6px;
+		max-height: 6px;
+		padding:23px;
+		}
+		
+	#buttons {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	height: 50px;
+	}
+		
+	#header img {
+		max-width: 80px;
+		max-height: 80px;
+		}
+		
+	h1 {
+		font-size: 40px;
+		}
+		
+	p#intro {
+	padding-top: 0px;
+	}
+	
+	#header {
+	margin-bottom: 0px;
+	}
+		
+	}
+	
+/*----------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 320px){
+	#header img {
+		margin-top: 40px;
+		margin-left: 5px;
+		margin-right: 10px;
+		max-width: 70px;
+		max-height: 70px;
+		}
+		
+	#header {
+	margin-bottom: 10px;
+	}
+	
+	h1 {
+		margin-bottom: 5px;
+		}
+		
+	#entry img {
+		max-width: 170px;
+		max-height: 170px;
+		margin: auto;
+		}
+	
+	.button button {
+		padding: 18px;
+		}
+		
+	.onee, .twoo, .threee, .fourr, .fivee, .sixx, .sevenn {
+	padding: 19px;
+	}
+		
+	img#add, img#add_two {
+	max-width: 100px;
+	}
+	
+	img#add:hover, img#add_two:hover {
+	max-width: 110px;
+	}
+	
+	textarea {
+		width: 150px;
+		}
+	
+	#last h1 {
+		font-size: 20px;
+		}
+		
+	.main1 {
+	width: 90%;
+		}
+	}
+	
+	/*-------------------------------------------------------------*/
+	
+	#last {
+	width: 80%;
+	padding: 30px;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 20px;
+	animation-name: animation1;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	}
+	
+@keyframes animation1 {
+	0% {background-color: #9c6615;}
+	25% {background-color: #5959ff;} 
+	50% {background-color: #ffc857;}
+	75% {background-color: #6f5060;}
+	100% {background-color: #829399;}
+	}
+	
+	@keyframes grow {
+		0%{
+			transform: scale(1.0);
+		}
+		100%{
+			transform: scale(1.05);
+		}
+	}
