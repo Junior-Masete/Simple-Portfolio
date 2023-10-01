@@ -1,0 +1,120 @@
+@font-face {
+	font-family: spart;
+	src: url("fonts/LeagueSpartan-Bold.otf");
+	}
+
+@font-face {
+    font-family: boy;
+    src: url("fonts/BOYCOTT_.ttf")
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+    overflow: hidden;
+}
+
+/*body {
+    height: 1080px;
+    background-image: url("images/brent.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+
+#containeer {
+    height: 100vh;
+    background-image: url("images/brent.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: spart;
+    font-size: 150px;
+    opacity: .8;
+}
+
+.subb {
+    font-family: spart;
+    font-size: 100px;
+}
+
+#headings {
+    position: relative;
+    left: 500px;
+    top: 80px;
+
+}
+
+li {
+    font-family: boy;
+    font-size: 80px;
+    color: rgb(247, 193, 122);
+}
+
+li a{
+    color: rgb(247, 193, 122);
+    text-decoration: none;
+}
+
+#tracklist {
+    position: relative;
+    left: 70%; 
+}
+
+video {
+    border: 4px solid black;
+    
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goBack {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 80px;
+    /*animation: groww 1s ease-in-out infinite;*/
+}
+
+input {
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    padding: 15px;
+    outline: 4px solid rgb(170, 32, 32);
+    color: rgb(170, 32, 32);
+    background: transparent;
+    font-family: spart;
+    font-size: 30px;
+    
+}
+
+input:hover {
+    cursor: pointer;
+    outline: 6px solid rgb(170, 32, 32);
+    transition: .5s;
+}
+
+#songg {
+    animation: groww 1s ease-in-out infinite;
+    transform-origin: left;
+	transform-box: fill-box;
+}
+
+@keyframes groww{
+    0%{
+		transform: scale(1.0);
+	}
+	100%{
+		transform: scale(1.05);
+	}
+}
